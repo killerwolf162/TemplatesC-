@@ -36,19 +36,17 @@ int main()
     for (int i : {4, 2, 3, 1, 5, 6})
     {
         intQueue.put(i);
+        std::cout << "first element in queue: " << intQueue.get() << " , " << "Queue size: " << intQueue.vectorQueueSize() << std::endl;
     }
 
-    std::cout << "first element in queue: " << intQueue.get() << " , " << "Queue size: " << intQueue.vectorQueueSize() << std::endl;
+    std::cout.precision(20);
 
     vectorQueue<std::string> stringQueue{};
     for (std::string s : {"aap", "noot", "mies"})
     {
         stringQueue.put(s);
+        std::cout << "first element in queue: " << stringQueue.get() << " , " << "Queue size: " << stringQueue.vectorQueueSize() << std::endl;
     }
-
-    std::cout.precision(20);
-    std::cout << "first element in queue: " << stringQueue.get() << " , " << "Queue size: " << stringQueue.vectorQueueSize() << std::endl;
-
 }
 
 
