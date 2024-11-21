@@ -40,6 +40,15 @@ int main()
 
     std::cout << "first element in queue: " << intQueue.get() << " , " << "Queue size: " << intQueue.vectorQueueSize() << std::endl;
 
+    vectorQueue<std::string> stringQueue{};
+    for (std::string s : {"aap", "noot", "mies"})
+    {
+        stringQueue.put(s);
+    }
+
+    std::cout.precision(20);
+    std::cout << "first element in queue: " << stringQueue.get() << " , " << "Queue size: " << stringQueue.vectorQueueSize() << std::endl;
+
 }
 
 
